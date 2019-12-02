@@ -4,41 +4,43 @@
         <link rel="stylesheet" href="CSS/main.css" />
     </head>
     <body>
-        <div class="center login">
-            <div class="formSection">
-                <div class="left">
-                    <img src="images/log_in.png" />
+        <form action="account/index.html" method="GET">
+            <div class="center login">
+                <div class="formSection">
+                    <div class="left">
+                        <img src="images/log_in.png" />
+                    </div>
+                    <div class="left title" style="margin-left: 20px;">
+                        Login
+                    </div>
                 </div>
-                <div class="left title">
-                    Login
+                <div class="newLiner"></div>
+                <div class="box formSection white">
+                    <div class="left">
+                        <img src="images/username.png" />
+                    </div>
+                    <div class="left" style="width: 93%;">
+                        <input type="text" placeholder="Username" class="transparent tb" />
+                    </div>
+                </div>
+                <div class="box formSection white">
+                    <div class="left">
+                        <img src="images/password1.png" />
+                    </div>
+                    <div class="left" style="width: 93%;">
+                        <input type="password" placeholder="Password" class="transparent tb" />
+                    </div>
+                </div>
+                <div class="formSection">
+                    <div class="left">
+                        <input type="checkbox" id="chBoxRememberMe" value="Remember me" />
+                        <label for="chBoxRememberMe">Remember me</label>
+                    </div>
+                    <div class="right">
+                        <input type="submit" value="Login" />
+                    </div>
                 </div>
             </div>
-            <div class="newLiner"></div>
-            <div class="box formSection white">
-                <div class="left">
-                    <img src="images/username.png" />
-                </div>
-                <div class="left" style="width: 93%;">
-                    <input type="text" class="transparent tb" />
-                </div>
-            </div>
-            <div class="box formSection white">
-                <div class="left">
-                    <img src="images/password1.png" />
-                </div>
-                <div class="left" style="width: 93%;">
-                    <input type="password" class="transparent tb" />
-                </div>
-            </div>
-            <div class="formSection">
-                <div class="left">
-                    <input type="checkbox" id="chBoxRememberMe" value="Remember me" />
-                    <label for="chBoxRememberMe">Remember me</label>
-                </div>
-                <div class="right">
-                    <input type="submit" value="Login" />
-                </div>
-            </div>
-        </div>
+        </form>
     </body>
 </html>

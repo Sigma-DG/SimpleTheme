@@ -10,7 +10,7 @@ div {overflow: hidden;}
 .white {background-color: white;}
 .transparent {background-color: transparent; border: 0px;}
 .box {border: 1px solid black;}
-.formSection {margin: 6px; padding: 4px;}
+.formSection {margin: 6px; padding: 6px;}
 
 .login {width: 30%; background-color: silver; border: 1px solid #666; margin-top: 80px;}
-.tb {color: #444; font-size: 16px; width: 100%;}
+.tb {color: #444; font-size: 18px; width: 100%; padding: 2px 0px 0px 4px;}
