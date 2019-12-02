@@ -1,6 +1,16 @@
 body { background-color: gray; margin: 0; padding: 0; }
 div {overflow: hidden;}
 
+.newLiner {clear: both;}
 .center {margin: 0 auto;}
+.left {float: left;}
+.right {float: right;}
 .popup {position: fixed; top: 50%; left: 50%;}
-.tb {padding: 4px; margin: 2px; border: 1px solid gray;}
+.title{font-family: 'Courier New', Courier, monospace; font-size: 46px;}
+.white {background-color: white;}
+.transparent {background-color: transparent; border: 0px;}
+.box {border: 1px solid black;}
+.formSection {margin: 6px; padding: 4px;}
+
+.login {width: 30%; background-color: silver; border: 1px solid #666; margin-top: 80px;}
+.tb {color: #444; font-size: 16px; width: 100%;}
