@@ -14,3 +14,7 @@ div {overflow: hidden;}
 
 .login {width: 30%; background-color: silver; border: 1px solid #666; margin-top: 80px;}
 .tb {color: #444; font-size: 18px; width: 100%; padding: 2px 0px 0px 4px;}
+.header {width: 80%; min-width: 800px; background-color: white; border-width: 0px 1px 1px 1px; border-style: solid; border-color: #333;}
+.header > .navigationButton {float: left; cursor: pointer; margin: 10px; border-right: 1px solid #666; padding-right: 7px;}
+.header > .navigationButton > img {margin: 0px; float: left;}
+.header > .navigationButton > div {margin: 4px; float: left;}
