@@ -2,22 +2,40 @@
     <head>
         <title>Items Search</title>
         <link rel="stylesheet" href="../CSS/main.css" />
+        <script src="../js/jquery-3.4.1.min.js"></script> 
+        <script src="../js/main.js"></script> 
     </head>
     <body>
         <div class="header center">
             <div class="navigationButton">
+                <img src="../Images/btnItems.png" alt="Items" />
+                <div class="lbl">Items</div>
+            </div>
+            <div class="navigationButton">
+                <img src="../Images/btnParts1.png" alt="Parts" />
+                <div class="lbl">Parts</div>
+            </div>
+            <div class="navigationButton">
                 <img src="../Images/btnManufacturer.png" alt="Manufacturers" />
                 <div class="lbl">Manufacturers</div>
             </div>
+            <div class="navigationButton">
+                <img src="../Images/btnSuppliers.png" alt="Suppliers" />
+                <div class="lbl">Suppliers</div>
+            </div>
+            <div class="navigationButton rightNavi">
+                <img src="../Images/password1.png" style="margin-top: 3px;" alt="Logout" />
+                <div class="lbl">Logout</div>
+            </div>
         </div>
-        <div class="center search" style="width: 50%; margin-top: 20px; min-width: 640px;">
+        <div class="center search">
             <h2>Search for items</h3>
             <div class="newLiner"></div>
             <div class="formSection">
                 <label for="txtSearch">Search for </label>
-                <input id="txtSearch" placeholder="Name, ID, etc." type="search" />
+                <input id="txtSearch" class="tb" placeholder="Name, ID, etc." type="search" />
                 <label for="drpCat"> in </label>
-                <select id="drpCat">
+                <select id="drpCat" class="tb">
                     <option>All</option>
                     <option>Items only</option>
                     <option>Manufacturers only</option>
