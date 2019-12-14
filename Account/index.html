@@ -2,8 +2,12 @@
     <head>
         <title>Items Search</title>
         <link rel="stylesheet" href="../CSS/main.css" />
-        <script src="../js/jquery-3.4.1.min.js"></script> 
-        <script src="../js/main.js"></script> 
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/jquery.corner.js"></script>
+        <script src="../js/main.js"></script>
+        <script>
+            $(document).ready(onItemsLoaded);
+        </script>
     </head>
     <body>
         <div class="header center">
@@ -23,27 +27,79 @@
                 <img src="../Images/btnSuppliers.png" alt="Suppliers" />
                 <div class="lbl">Suppliers</div>
             </div>
+            <div class="navigationButton">
+                <img src="../Images/btnSettings.png" style="width: 28px;" alt="Options" />
+                <div class="lbl">Options</div>
+            </div>
             <div class="navigationButton rightNavi">
                 <img src="../Images/password1.png" style="margin-top: 3px;" alt="Logout" />
                 <div class="lbl">Logout</div>
             </div>
         </div>
-        <div class="center search">
-            <h2>Search for items</h3>
-            <div class="newLiner"></div>
-            <div class="formSection">
-                <label for="txtSearch">Search for </label>
-                <input id="txtSearch" class="tb" placeholder="Name, ID, etc." type="search" />
-                <label for="drpCat"> in </label>
-                <select id="drpCat" class="tb">
-                    <option>All</option>
-                    <option>Items only</option>
-                    <option>Manufacturers only</option>
-                    <option>Suppliers only</option>
-                </select>
+        <div class="formBody">
+            <h1>Search for items</h1>
+            <div class="search">
+                <div class="formSection">
+                    <label for="txtSearch">Keyword </label>
+                    <input id="txtSearch" class="tb" placeholder="Name, ID, etc." type="search" />
+                    <label for="drpCat"> in </label>
+                    <select id="drpCat" class="tb">
+                        <option>All</option>
+                        <option>Items only</option>
+                        <option>Manufacturers only</option>
+                        <option>Suppliers only</option>
+                    </select>
+                    <input type="image" class="white b1" value="Search" id="#btnSearch" src="../Images/Search01.png" style="width: 28px; height: 28px; margin-bottom: -8px !important;" />
+                </div>
             </div>
-            <div class="newLiner"><hr /></div>
-            Results:
+            <div class="white table">
+                <table cellpadding="2" cellspacing="0" border="0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Feature 01</th>
+                            <th>Feature 02</th>
+                            <th>Feature 03</th>
+                            <th>Feature 04</th>
+                            <th>Feature 05</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AS6A51V6ADV</td>
+                            <td>A/C Motor</td>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                            <td>value 4</td>
+                            <td>value 5</td>
+                            <td>Some description and notes for this item...</td>
+                        </tr>
+                        <tr>
+                            <td>BD9B8DF6B549DF</td>
+                            <td>Motor</td>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                            <td>value 4</td>
+                            <td>value 5</td>
+                            <td>Some description and short notes...</td>
+                        </tr>
+                        <tr>
+                            <td>8R5BFD59BE</td>
+                            <td>unknown</td>
+                            <td>value 1</td>
+                            <td>value 2</td>
+                            <td>value 3</td>
+                            <td>value 4</td>
+                            <td>value 5</td>
+                            <td>Some description...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </body>
 </html>
