@@ -20,3 +20,7 @@ function toLogin(){
 function onSearch(){
     $("#results").slideDown(700);
 }
+
+function toMotor(){
+    window.location.href = "item.html";
+}

@@ -11,10 +11,14 @@ div {overflow: hidden;}
 .transparent {background-color: transparent; border: 0px;}
 .box {border: 1px solid black;}
 .formSection {margin: 6px; padding: 6px;}
+.formSection p {margin:2px;}
 .wFull {width: 100%;}
+.wHalf {width:48%;}
 .b1 {border: 1px solid #666;}
-.bg {width: 768px; height: 600px; display: none; z-index: -1; position: absolute; left: 50%; top: 50%; margin: -300px 0px 0px -359px;}
+.bg {width: 768px; height: 600px; display: none; z-index: -1; position: absolute; left: 50%; top: 60%; margin: -300px 0px 0px -359px;}
 .bg > img {width: 100%; height: 100%; margin: 0px; padding: 0px;}
+.logo {width: 700px; height: 80px; position: absolute; left: 46%; top: 0px; margin: 10px 0px 0px -300px;}
+.logo > img {width: 100%; height: 100%; margin: 0px; padding: 0px;}
 .table td {border: 1px solid #666;}
 .table > table {width: 100%; margin: 0px auto;}
 .table > table > thead {background-color: #222 !important; color: #BBB !important; font-style: bold;}
@@ -34,6 +38,10 @@ div {overflow: hidden;}
 .search {width: 100%; min-width: 640px;}
 .search > .formSection > label {font-size: 24px;}
 .search > .formSection > .tb { padding: 3px !important; font-size: 24px !important;}
+
+.imageContainer {margin-top: 20px; scroll-behavior: smooth; max-height: 140px;}
+.imageHolder {margin: 3px;}
+.imageHolder > img {width: 96px;}
 
 a {text-decoration: underline; color: #2244CC; cursor: pointer;}
 

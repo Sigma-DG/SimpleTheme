@@ -12,8 +12,8 @@
     <body>
         <div class="header center">
             <div class="navigationButton" onclick="toItems()">
-                <img src="../Images/btnItems.png" alt="Items" />
-                <div class="lbl">Items</div>
+                <img src="../Images/btnItems.png" alt="Motors" />
+                <div class="lbl">Motors</div>
             </div>
             <div class="navigationButton" onclick="toParts()">
                 <img src="../Images/btnParts1.png" alt="Parts" />
@@ -37,13 +37,13 @@
             </div>
         </div>
         <div class="formBody">
-            <h1>Search for items</h1>
+            <h1>Search</h1>
             <div class="search">
                 <div class="formSection">
                     <label for="drpCat"> In </label>
                     <select id="drpCat" class="tb">
                         <option>All</option>
-                        <option>Items only</option>
+                        <option>Motors only</option>
                         <option>Manufacturers only</option>
                         <option>Suppliers only</option>
                     </select>
@@ -56,46 +56,62 @@
                 <table cellpadding="2" cellspacing="0" border="0">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Feature 01</th>
-                            <th>Feature 02</th>
-                            <th>Feature 03</th>
-                            <th>Feature 04</th>
-                            <th>Feature 05</th>
-                            <th>Description</th>
+                            <th>Canext P/N</th>
+                            <th>Manufacturer</th>
+                            <th>Model</th>
+                            <th>Type</th>
+                            <th>Usage</th>
+                            <th>Voltage</th>
+                            <th>Rotation</th>
+                            <th>Rebuilt</th>
+                            <th>New</th>
+                            <th>Cost</th>
+                            <th>Stock</th>
+                            <th>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>AS6A51V6ADV</td>
-                            <td>A/C Motor</td>
-                            <td>value 1</td>
-                            <td>value 2</td>
-                            <td>value 3</td>
-                            <td>value 4</td>
-                            <td>value 5</td>
-                            <td>Some description and notes for this item...</td>
+                            <td onclick="toMotor()">AS6A51V6ADV</td>
+                            <td>Raymond</td>
+                            <td>6SD65SFN</td>
+                            <td>AC</td>
+                            <td>Drive</td>
+                            <td>24v/48v</td>
+                            <td>CCW</td>
+                            <td>675 CAD</td>
+                            <td>1500 CAD</td>
+                            <td>R:220 N:625</td>
+                            <td>R:1</td>
+                            <td>Some description and notes for this item...<br>and some more..</td>
                         </tr>
                         <tr>
-                            <td>BD9B8DF6B549DF</td>
-                            <td>Motor</td>
-                            <td>value 1</td>
-                            <td>value 2</td>
-                            <td>value 3</td>
-                            <td>value 4</td>
-                            <td>value 5</td>
-                            <td>Some description and short notes...</td>
+                            <td onclick="toMotor()">AS6A51V6ADV</td>
+                            <td>Raymond</td>
+                            <td>6SD65SFN</td>
+                            <td>AC</td>
+                            <td>Drive</td>
+                            <td>24v/48v</td>
+                            <td>CCW</td>
+                            <td>675 CAD</td>
+                            <td>1500 CAD</td>
+                            <td>R:220 N:625</td>
+                            <td>R:1</td>
+                            <td>Some description and notes for this item...<br>and some more..</td>
                         </tr>
                         <tr>
-                            <td>8R5BFD59BE</td>
-                            <td>unknown</td>
-                            <td>value 1</td>
-                            <td>value 2</td>
-                            <td>value 3</td>
-                            <td>value 4</td>
-                            <td>value 5</td>
-                            <td>Some description...</td>
+                            <td onclick="toMotor()">AS6A51V6ADV</td>
+                            <td>Raymond</td>
+                            <td>6SD65SFN</td>
+                            <td>AC</td>
+                            <td>Drive</td>
+                            <td>24v/48v</td>
+                            <td>CCW</td>
+                            <td>675 CAD</td>
+                            <td>1500 CAD</td>
+                            <td>R:220 N:625</td>
+                            <td>R:1</td>
+                            <td>Some description and notes for this item...<br>and some more..</td>
                         </tr>
                     </tbody>
                 </table>
