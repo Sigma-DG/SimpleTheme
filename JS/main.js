@@ -6,3 +6,17 @@ function onItemsLoaded(params) {
     $(".header").corner("bottom 7px");
     $(".formBody").corner("5px");
 }
+
+function toItems(){
+    window.location.href = "index.html";
+}
+function toOptions(){
+    window.location.href = "options.html";
+}
+function toLogin(){
+    window.location.href = "../index.html";
+}
+
+function onSearch(){
+    $("#results").slideDown(700);
+}

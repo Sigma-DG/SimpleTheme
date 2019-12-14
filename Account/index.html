@@ -11,27 +11,27 @@
     </head>
     <body>
         <div class="header center">
-            <div class="navigationButton">
+            <div class="navigationButton" onclick="toItems()">
                 <img src="../Images/btnItems.png" alt="Items" />
                 <div class="lbl">Items</div>
             </div>
-            <div class="navigationButton">
+            <div class="navigationButton" onclick="toParts()">
                 <img src="../Images/btnParts1.png" alt="Parts" />
                 <div class="lbl">Parts</div>
             </div>
-            <div class="navigationButton">
+            <div class="navigationButton" onclick="toManufacturers()">
                 <img src="../Images/btnManufacturer.png" alt="Manufacturers" />
                 <div class="lbl">Manufacturers</div>
             </div>
-            <div class="navigationButton">
+            <div class="navigationButton" onclick="toSuppliers()">
                 <img src="../Images/btnSuppliers.png" alt="Suppliers" />
                 <div class="lbl">Suppliers</div>
             </div>
-            <div class="navigationButton">
+            <div class="navigationButton" onclick="toOptions()">
                 <img src="../Images/btnSettings.png" style="width: 28px;" alt="Options" />
                 <div class="lbl">Options</div>
             </div>
-            <div class="navigationButton rightNavi">
+            <div class="navigationButton rightNavi" onclick="toLogin()">
                 <img src="../Images/password1.png" style="margin-top: 3px;" alt="Logout" />
                 <div class="lbl">Logout</div>
             </div>
@@ -40,19 +40,19 @@
             <h1>Search for items</h1>
             <div class="search">
                 <div class="formSection">
-                    <label for="txtSearch">Keyword </label>
-                    <input id="txtSearch" class="tb" placeholder="Name, ID, etc." type="search" />
-                    <label for="drpCat"> in </label>
+                    <label for="drpCat"> In </label>
                     <select id="drpCat" class="tb">
                         <option>All</option>
                         <option>Items only</option>
                         <option>Manufacturers only</option>
                         <option>Suppliers only</option>
                     </select>
-                    <input type="image" class="white b1" value="Search" id="#btnSearch" src="../Images/Search01.png" style="width: 28px; height: 28px; margin-bottom: -8px !important;" />
+                    <label for="txtSearch"> find </label>
+                    <input id="txtSearch" class="tb" placeholder="Name, ID, etc." type="search" />
+                    <input type="image" class="white b1" value="Search" id="btnSearch" src="../Images/Search01.png" onclick="onSearch()" />
                 </div>
             </div>
-            <div class="white table">
+            <div class="white table" id="results">
                 <table cellpadding="2" cellspacing="0" border="0">
                     <thead>
                         <tr>

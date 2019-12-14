@@ -29,8 +29,13 @@ div {overflow: hidden;}
 .header > .navigationButton > img {margin: 0px; float: left;}
 .header > .navigationButton > div {margin: 4px; float: left;}
 
-.formBody {margin: 0px auto; margin-top: 20px; min-width: 640px; background-color: #aaa; width: 70%; border: 1px solid #666;}
+.formBody {margin: 0px auto; margin-top: 20px; color: #333; min-width: 640px; background-color: #aaa; width: 70%; border: 1px solid #666;}
 .formBody > * {margin: 6px;}
 .search {width: 100%; min-width: 640px;}
-.search > .formSection > label {font-size: 18px;}
-.search > .formSection > .tb { padding: 3px !important;}
+.search > .formSection > label {font-size: 24px;}
+.search > .formSection > .tb { padding: 3px !important; font-size: 24px !important;}
+
+a {text-decoration: underline; color: #2244CC; cursor: pointer;}
+
+#btnSearch {width: 35px; height: 35px; margin-bottom: -9px !important;}
+#results {display: none;}

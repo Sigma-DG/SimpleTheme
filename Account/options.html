@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Items Search</title>
+        <link rel="stylesheet" href="../CSS/main.css" />
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/jquery.corner.js"></script>
+        <script src="../js/main.js"></script>
+        <script>
+            $(document).ready(onItemsLoaded);
+        </script>
+    </head>
+    <body>
+        <div class="header center">
+            <div class="navigationButton" onclick="toItems()">
+                <img src="../Images/btnItems.png" alt="Items" />
+                <div class="lbl">Items</div>
+            </div>
+            <div class="navigationButton" onclick="toParts()">
+                <img src="../Images/btnParts1.png" alt="Parts" />
+                <div class="lbl">Parts</div>
+            </div>
+            <div class="navigationButton" onclick="toManufacturers()">
+                <img src="../Images/btnManufacturer.png" alt="Manufacturers" />
+                <div class="lbl">Manufacturers</div>
+            </div>
+            <div class="navigationButton" onclick="toSuppliers()">
+                <img src="../Images/btnSuppliers.png" alt="Suppliers" />
+                <div class="lbl">Suppliers</div>
+            </div>
+            <div class="navigationButton" onclick="toOptions()">
+                <img src="../Images/btnSettings.png" style="width: 28px;" alt="Options" />
+                <div class="lbl">Options</div>
+            </div>
+            <div class="navigationButton rightNavi" onclick="toLogin()">
+                <img src="../Images/password1.png" style="margin-top: 3px;" alt="Logout" />
+                <div class="lbl">Logout</div>
+            </div>
+        </div>
+        <div class="formBody">
+            <h1>Options</h1>
+            <hr />
+            <table class="wFull" cellpadding="6">
+                <tr>
+                    <td>
+                        <a>Motor Types</a>
+                    </td>
+                    <td>
+                        <a>Motor Usages</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Sensor Types</a>
+                    </td>
+                    <td>
+                        <a>Specifications</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Part Types</a>
+                    </td>
+                    <td>
+                        <a>Thermistor Types</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Bearing Types</a>
+                    </td>
+                    <td>
+                        <a>Card Types</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Encoder Types</a>
+                    </td>
+                    <td>
+                        <a>Units</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a>Seal Types</a>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
