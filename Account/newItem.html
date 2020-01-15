@@ -1,0 +1,276 @@
+<html>
+    <head>
+        <title>Add New Motor</title>
+        <link rel="stylesheet" href="../CSS/main.css" />
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/jquery.corner.js"></script>
+        <script src="../js/main.js"></script>
+        <script>
+            $(document).ready(onItemsLoaded);
+        </script>
+    </head>
+    <body>
+        <div class="header center">
+            <div class="navigationButton" onclick="toItems()">
+                <img src="../Images/btnItems.png" alt="Motors" />
+                <div class="lbl">Motors</div>
+            </div>
+            <div class="navigationButton" onclick="toParts()">
+                <img src="../Images/btnParts1.png" alt="Parts" />
+                <div class="lbl">Parts</div>
+            </div>
+            <div class="navigationButton" onclick="toManufacturers()">
+                <img src="../Images/btnManufacturer.png" alt="Manufacturers" />
+                <div class="lbl">Manufacturers</div>
+            </div>
+            <div class="navigationButton" onclick="toSuppliers()">
+                <img src="../Images/btnSuppliers.png" alt="Suppliers" />
+                <div class="lbl">Suppliers</div>
+            </div>
+            <div class="navigationButton" onclick="toOptions()">
+                <img src="../Images/btnSettings.png" style="width: 28px;" alt="Options" />
+                <div class="lbl">Options</div>
+            </div>
+            <div class="navigationButton rightNavi" onclick="toLogin()">
+                <img src="../Images/password1.png" style="margin-top: 3px;" alt="Logout" />
+                <div class="lbl">Logout</div>
+            </div>
+        </div>
+        <div class="formBody">
+            <h1>New Motor</h1>
+            <div class="white formSection">
+                <div class="wHalf left" style="padding-right: 5px;">
+                    <h3>Identification</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <label class="lbl">Canex P/N:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Canex P/N" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Manufacturer P/N 1:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Manufacturer P/N 1" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Manufacturer P/N 2:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Manufacturer P/N 2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Manufacturer:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Select Manufacturer" /><input type="button" class="tbMinBtn" value="Find" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Model #:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Model #" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label class="lbl">Notes:</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <textarea class="wFull" style="min-height: 80px;"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="wHalf left" style="border-left: 1px solid #aaa; padding-left: 5px;">
+                    <h3>Specifications</h3>
+                    <table>
+                        <tr>
+                            <td>
+                                <label class="lbl">Motor Type:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Select Type" /><input type="button" class="tbMinBtn" value="Find" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Usage:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Select Usage" /><input type="button" class="tbMinBtn" value="Find" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Voltage:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Voltage" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Amps:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Amps" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Rotation:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="RPM + Direction" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Duty or Ratings:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Duty or Ratings (mins)" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Power:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Power (kW)" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <!--<input type="button" value="Save" class="right btnBig m6" />-->
+                                <div class="b1 right btn m6">
+                                    <label class="left" style="margin: 7px 2px 0px 5px;">Save</label>
+                                    <img src="/Images/btnSave.png" style="margin-right: 3px;" height="28" class="left" alt="" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="newLiner" style="border-bottom: 1px solid #aaa;"></div>
+                <div class="wFull m6">
+                    <label>Upload new picture: </label><input type="file" value="New picture" placeholder="Select new picture" /><input type="submit" value="Upload" />
+                </div>
+                <div class="imageContainer wFull">
+                    <div class="imageHolder left white">
+                        <img src="../Images/Items/570-253-350.jpg" class="b1 left" ><input type="image" value="Delete" class="btnDelete b1 left" src="../Images/Trash01Mini.png" />
+                    </div>
+                    <div class="imageHolder left white">
+                        <img src="../Images/Items/570-253-350-1.jpg" class="b1 left" ><input type="image" value="Delete" class="btnDelete b1 left" src="../Images/Trash01Mini.png" />
+                    </div>
+                    <div class="imageHolder left white">
+                        <img src="../Images/Items/570-253-350-2.jpg" class="b1 left" ><input type="image" value="Delete" class="btnDelete b1 left" src="../Images/Trash01Mini.png" />
+                    </div>
+                    <div class="imageHolder left white">
+                        <img src="../Images/Items/570-253-350-3.jpg" class="b1 left" ><input type="image" value="Delete" class="btnDelete b1 left" src="../Images/Trash01Mini.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="white">
+                <div class="formSection b1">
+                    <label class="lbl">Select Part Type to add:</label>
+                    <select class="tbMin">
+                        <option value="pt1">Part type 1</option>
+                        <option value="pt1">Part type 2</option>
+                        <option value="pt1">Part type 3</option>
+                        <option value="pt1">Part type 4</option>
+                    </select>
+                </div>
+                <div class="formSection b1">
+                    <h4>New Part Type 1</h4>
+                    <table>
+                        <tr>
+                            <td>
+                                <label class="lbl">Field 1:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Value 1" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Field 2:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Value 2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="lbl">Field 3:</label>
+                            </td>
+                            <td>
+                                <input type="text" class="tbMin" placeholder="Value 3" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <!--<input type="button" value="Save" class="right btnBig m6" />-->
+                                <div class="b1 right btn m6">
+                                    <label class="left" style="margin: 7px 2px 0px 5px;">Add</label>
+                                    <img src="/Images/btnSave.png" style="margin-right: 3px;" height="28" class="left" alt="" />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="newLiner">&nbsp;</div>
+                <div class="table m9">
+                    <div class="tblHead">
+                        <b>Part Type 2</b>
+                    </div>
+                    <table cellpadding="2" cellspacing="0">
+                        <tr>
+                            <td>A/C Motor</td>
+                            <td>Some description and notes for this item...</td>
+                        </tr>
+                        <tr>
+                            <td>Motor</td>
+                            <td>Some description and short notes...</td>
+                        </tr>
+                        <tr>
+                            <td>Other field..</td>
+                            <td>Some description...</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="table m9">
+                    <div class="tblHead">
+                        <b>Part Type 2</b>
+                    </div>
+                    <table cellpadding="2" cellspacing="0">
+                        <tr>
+                            <td>A/C Motor</td>
+                            <td>Some description and notes for this item...</td>
+                        </tr>
+                        <tr>
+                            <td>Motor</td>
+                            <td>Some description and short notes...</td>
+                        </tr>
+                        <tr>
+                            <td>Other field..</td>
+                            <td>Some description...</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

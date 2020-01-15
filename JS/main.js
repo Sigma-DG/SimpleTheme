@@ -5,6 +5,7 @@ function onLoginLoaded() {
 function onItemsLoaded(params) {
     $(".header").corner("bottom 7px");
     $(".formBody").corner("5px");
+    $(".formSection").corner("4px");
 }
 
 function toItems(){
@@ -23,4 +24,8 @@ function onSearch(){
 
 function toMotor(){
     window.location.href = "item.html";
+}
+
+function toAddMotor(){
+    window.location.href = "newItem.html";
 }
